@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+TAS+Beginner&family=Kanit:wght@500&display=swap');
+body{
+    height: 100vh;
+    background: url(bg.jpg);
+    font-family: 'Kanit', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Button Animation*/
+.button button{
+    left: 47%;
+    top: 30%;
+    width: 15%;
+    height: 10%;
+    font-size: 2.5vh;
+    text-align: center;
+}
+button {
+    color: white;
+    background: transparent;
+    margin-top: 10%;
+    font: 400 30px 'Kanit', sans-serif;
+    padding: 25px 34px;
+    cursor: pointer;
+    transition: .6s;
+    border: none;
+}
+
+
+button span {
+    position: absolute;
+    background: #FF0077;
+    opacity: 0;
+    transition: 1s;
+}
+
+button:hover span {
+    animation: bg 5s infinite;
+    animation-delay: 1.5s;
+}
+@keyframes bg {
+    0%, 100% {
+        background: #FF0077;
+    }
+    25% {
+        background: #2D76FF;
+    }
+    50% {
+        background: #3CD421;
+    }
+    75% {
+        background: #E7D219;
+    }
+}
+
+button span:nth-child(1),
+button span:nth-child(2) {
+    top: 0;
+    left: 0;
+}
+
+button span:nth-child(3),
+button span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+button span:nth-child(1),
+button span:nth-child(3) {
+    width: 0;
+    height: 2px;
+}
+
+button span:nth-child(2),
+button span:nth-child(4) {
+    height: 0;
+    width: 2px;
+}
+
+button:hover span:nth-child(1),
+button:hover span:nth-child(3) {
+    width: 100%;
+    opacity: 1;
+}
+
+button:hover span:nth-child(2),
+button:hover span:nth-child(4) {
+    height: 100%;
+    opacity: 1;
+}
+/* The End Of Button Animation*/
+
+/* The Navigation Menu*/
+nav a{
+    color: white;
+    text-decoration: none;
+}
+button {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+}
+
+nav {
+    width: 90px;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .06);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, .4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    transition: .4s;
+    color: white;
+}
+nav:hover{
+    width: 250px;
+}
+nav .nav_bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    line-height: 45px;
+}
+nav .nav_top {
+    position: absolute;
+    width: 100%;
+    top: 32%;
+    line-height: 45px;
+}
+nav .pfp img{
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 15px;
+    transition: .4s;
+    cursor: pointer;
+}
+nav:hover .pfp img{
+    width: 120px;
+    margin-top: 30px;
+}
+nav .pfp img:hover{
+    width: 130px;
+    box-shadow: 0 8px 8px black ;
+}
+nav .pfp .info {
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+nav:hover .pfp .info {
+    opacity: 1;
+    transition: .4s;
+    transition-delay: .2s;
+}
+nav .nav_top{
+    opacity: 0;
+    transition: .4s;
+}
+nav:hover .nav_top{
+    opacity: 1;
+}
+nav .nav_bottom{
+    opacity: 0;
+    transition: .4s;
+}
+nav:hover .nav_bottom{
+    opacity: 1;
+}
+nav .text{
+    color: white;
+}
+nav .text:hover{
+    color: blueviolet;
+}
+.footer{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+}
+/*Title Text*/
+.head {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 10%;
+    left: 42%;
+}
+.head h1{
+    font-size: 4vh;
+    font-family: 'Edu TAS Beginner', cursive;
+}

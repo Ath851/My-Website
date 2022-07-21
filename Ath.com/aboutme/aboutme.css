@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+TAS+Beginner&family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body{
+    background: url(bg.jpg);
+    background-repeat: no-repeat;
+}
+/*Navigation Bar*/
+
+nav .logo li {
+    display: inline;
+    position: absolute;
+    left: 5%;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    transform: translateY(-5px);
+    text-shadow: black 0 5px 5px;
+    cursor: pointer;
+}
+nav .logo li:hover{
+    color: blueviolet;
+}
+nav{
+    display: flex;
+    color: white;
+    justify-content: end;
+    background: rgb(41, 41, 41);
+    font-family: 'Kanit', sans-serif;
+
+}
+nav li{
+    display: inline-block;
+    padding-right: 50px;    
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+nav li a:hover{
+    color: blueviolet;
+}
+/*End of navigation Bar*/
+img {
+    width: 20vh;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    box-shadow: 0 5px 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+img:hover {
+    width: 22vh;
+}
+.ab{
+    position: absolute;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    left: 50%;
+    top: 8%;
+}
+.aboutme {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    background: linear-gradient(45deg,rgb(71, 69, 69),rgb(114, 108, 108),rgb(71, 69, 69));
+    color: rgb(255, 255, 255);
+    width: 5vh;
+    height: 20vh;
+    border: solid black ;
+    box-shadow: 0 5px 5px black;
+    border-radius: 3vh;
+    font-size: 17px;
+    cursor: pointer;
+    animation-name: slide;
+    animation-duration: 1000s;
+    animation-iteration-count: infinite;
+}
+@keyframes slide {
+    0%{
+        width: 5vh;
+        height: 20vh;
+    }
+    
+    0.2% {
+        width: 45vh;
+        height: 20vh;
+    }
+}
+
+.aboutme .label {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    padding-left: 20px;
+}
+
+.aboutme .ans {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    padding-left: 200px;
+}
+.aboutme .texts {
+    opacity: 0;
+    font-size: medium;
+    animation-name: texts;
+    animation-duration: 900s;
+    animation-delay: 1s;
+}
+@keyframes texts{
+    0%,100% {
+        opacity: 0;
+    }
+    0.2% {
+        opacity: 1;
+    }
+}
+.paragraph {
+    position: absolute;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    width: 80%;
+    bottom: 35%;
+    left: 10%;
+    font-size: 20px;
+    text-shadow: 0 6px 6px black;
+}
+.next{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+.next button{
+    padding: 10px;
+    border-radius: 10vh;
+    font-family: 'Kanit', sans-serif;
+    width: 19vh;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    border: 0px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: black 0 6px 5px;
+}
+.next button:hover{
+    background-color: rgb(0, 255, 0);
+    color: white;
+    padding: 12px;
+}
+.next button span{
+    position: absolute;
+    transform: translateY(2.5px);
+    margin-left: 5px;
+}
